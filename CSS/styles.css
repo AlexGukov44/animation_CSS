@@ -1,0 +1,81 @@
+.lesson_1, .homework_1, .homework_2, .homework_3, .footer {
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+.box {
+    transition: 6s;
+}
+.point {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    transition: 6s;
+}
+
+.box:hover .point {
+    width: 100%;
+}
+
+
+
+.product-card {
+    width: 100px;
+    height: 100px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s ease 0s;
+}
+
+.product-card:hover {
+    transform: scale(1.1);
+    background-color: #e0e0e0;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.product-title {
+    font-size: 18px;
+    text-align: center;
+}
+
+
+
+.box-2 {
+    width: 100px;
+    height: 100px;
+    background-color: #4caf50;
+    margin: 50px auto;
+    animation: spin 2s infinite alternate;
+    transition:all 0.3s ease 0s;
+}
+
+.box-2:hover {
+    opacity: 0.5;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg)scale(1.5);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.footer {
+    text-align: center;
+    
+}
